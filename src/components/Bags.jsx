@@ -17,11 +17,15 @@ export default function Bags() {
         getCardData();
     }, []);
 
-    console.log(cardData);
+    // console.log(cardData);
 
     return (
-        <div>
-            <h2 className='m-10'>Bags . Backpacks</h2>
+        <div className='m-5'>
+            <div className='mb-10 flex gap-2'>
+                <span>Bags</span>
+                <img src="/svg/dot.svg" alt="dot" />
+                <span>Backpacks</span>
+            </div>
             <div className='flex flex-wrap justify-center items-center gap-x-10'>
                 {cardData?.map(card => (
                     <Cards

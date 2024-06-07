@@ -19,11 +19,19 @@ export default function Cards({ card }) {
                 </h2>
                 <div className='flex justify-between'>
                     <div className='flex gap-1 justify-center items-center'>
-                        <span className='text-xl'>&#8377;{card?.price}</span>
-                        <span className='text-xs mt-2'>8999</span>
-                        <span className='text-xs text-green-500 mt-2'>&#40;50%off&#41;</span>
+                        <span className='text-xl'>
+                            &#8377;{card?.price}
+                        </span>
+                        <span className='text-xs mt-2'>
+                            8999
+                        </span>
+                        <span className='text-xs text-green-500 mt-2'>
+                            &#40;50%off&#41;
+                        </span>
                     </div>
-                    <img src="/svg/add-cart.svg" alt="add-cart" />
+                    <img
+                        src="/svg/add-cart.svg"
+                        alt="add-cart" />
                 </div>
             </div>
         </div>
